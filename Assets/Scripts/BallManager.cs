@@ -90,7 +90,7 @@ public class BallManager : MonoBehaviour
     void Update()
     {
         hasBeenShot = (BallCount > 0);
-        
+
         if (UIManager.instance.IsPaused) return;
 
         Vector3 touchPosition = InputManager.instance.GetLastTouchPosition(out bool touchEnded);
@@ -157,6 +157,13 @@ public class BallManager : MonoBehaviour
         Vector3 newPosition = launchBall.position;
         newPosition.x = firstHitPoint.x;
         launchBall.position = newPosition;
+
+        UIManager.instance.UpdateBallCount(BallNumber);
+    }
+
+    public void IncreaseBallNumber()
+    {
+        BallNumber++;
 
         UIManager.instance.UpdateBallCount(BallNumber);
     }

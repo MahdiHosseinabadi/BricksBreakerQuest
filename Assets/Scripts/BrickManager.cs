@@ -35,7 +35,6 @@ public class BrickManager : MonoBehaviour
 
     void Start()
     {
-        // isResetting = false;
         CurrentRound = 1;
         camera = Camera.main;
         CalculateWorldWidth();
@@ -132,6 +131,8 @@ public class BrickManager : MonoBehaviour
         BricksParent.position -= new Vector3(0, brickWidth, 0);
         CurrentRound++;
         CreateBrick();
+
+        BallManager.instance.IncreaseBallNumber();
 
         OnNextRoundStarted?.Invoke();
         AudioManager.instance.Play(SoundType.NextRound);
