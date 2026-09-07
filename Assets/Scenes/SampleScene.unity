@@ -988,8 +988,8 @@ MonoBehaviour:
   BricksParent: {fileID: 1488147449}
   referencePoint: {fileID: 835288859}
   BrickCount: 8
-  PossibilityOfNoEmptySpaceCreate: 3
-  PossibilityOfBoosterCreate: 2
+  PossibilityOfNoEmptySpaceCreate: 5
+  PossibilityOfBoosterCreate: 3
 --- !u!4 &219875065
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.029632539, y: 0.92219037}
   m_AnchorMax: {x: 0.43229502, y: 0.9864381}
-  m_AnchoredPosition: {x: -21.999908, y: -4}
+  m_AnchoredPosition: {x: -21.999847, y: -4}
   m_SizeDelta: {x: 22, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &253090848
@@ -2054,6 +2054,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2191,6 +2192,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_CullTransparentMesh: 1
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913db4028af182c47a6f1a8d4cf593ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetupResolution
+  targetAspectRatio: {x: 9, y: 16}
 --- !u!1 &582594393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,7 +2216,6 @@ GameObject:
   - component: {fileID: 582594394}
   - component: {fileID: 582594395}
   - component: {fileID: 582594396}
-  - component: {fileID: 582594397}
   m_Layer: 6
   m_Name: DownWall
   m_TagString: DownWall
@@ -2328,19 +2341,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &582594397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582594393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 913db4028af182c47a6f1a8d4cf593ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetupResolution
-  targetAspectRatio: {x: 9, y: 16}
 --- !u!1 &606687397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,7 +2745,6 @@ GameObject:
   - component: {fileID: 652922776}
   - component: {fileID: 652922777}
   - component: {fileID: 652922778}
-  - component: {fileID: 652922779}
   m_Layer: 6
   m_Name: Leftwall
   m_TagString: Untagged
@@ -2871,19 +2870,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &652922779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652922775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 913db4028af182c47a6f1a8d4cf593ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetupResolution
-  targetAspectRatio: {x: 9, y: 16}
 --- !u!1 &683513480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3258,6 @@ GameObject:
   - component: {fileID: 835288859}
   - component: {fileID: 835288860}
   - component: {fileID: 835288861}
-  - component: {fileID: 835288862}
   m_Layer: 6
   m_Name: UpWall
   m_TagString: Untagged
@@ -3398,19 +3383,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &835288862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835288858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 913db4028af182c47a6f1a8d4cf593ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetupResolution
-  targetAspectRatio: {x: 9, y: 16}
 --- !u!1 &873213747
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,6 +3601,7 @@ GameObject:
   - component: {fileID: 887325430}
   - component: {fileID: 887325429}
   - component: {fileID: 887325431}
+  - component: {fileID: 887325432}
   m_Layer: 0
   m_Name: Image Background
   m_TagString: Untagged
@@ -3729,6 +3702,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.AspectRatioFitter
   m_AspectMode: 4
   m_AspectRatio: 1
+--- !u!114 &887325432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887325428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ae7d9989e89e44f982aade016a53b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundFitCamera
+  spriteRenderer: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1 &914260940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,7 +3960,6 @@ GameObject:
   - component: {fileID: 1043467687}
   - component: {fileID: 1043467688}
   - component: {fileID: 1043467689}
-  - component: {fileID: 1043467690}
   m_Layer: 6
   m_Name: Rightwall
   m_TagString: Untagged
@@ -4099,19 +4085,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &1043467690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043467686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 913db4028af182c47a6f1a8d4cf593ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetupResolution
-  targetAspectRatio: {x: 9, y: 16}
 --- !u!1 &1051649472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,7 +6294,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
@@ -6934,7 +6907,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1471871287
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: -100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
