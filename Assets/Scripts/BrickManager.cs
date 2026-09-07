@@ -132,8 +132,6 @@ public class BrickManager : MonoBehaviour
         CurrentRound++;
         CreateBrick();
 
-        BallManager.instance.IncreaseBallNumber();
-
         OnNextRoundStarted?.Invoke();
         AudioManager.instance.Play(SoundType.NextRound);
     }

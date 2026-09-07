@@ -110,6 +110,7 @@ public class BallManager : MonoBehaviour
             waitingForFirstHit = true;
             shootingFinished = false;
             firstHitPending = false;
+
             StartCoroutine(ShootBalls(touchPosition));
         }
     }
@@ -158,13 +159,12 @@ public class BallManager : MonoBehaviour
         newPosition.x = firstHitPoint.x;
         launchBall.position = newPosition;
 
-        UIManager.instance.UpdateBallCount(BallNumber);
+        IncreaseBallNumber();
     }
 
     public void IncreaseBallNumber()
     {
         BallNumber++;
-
         UIManager.instance.UpdateBallCount(BallNumber);
     }
 
@@ -178,10 +178,12 @@ public class BallManager : MonoBehaviour
     {
         BallNumber = 1;
         BallCount = 0;
+
         hasBeenShot = false;
         waitingForFirstHit = false;
         shootingFinished = false;
         firstHitPending = false;
+
         firstHitPoint = new Vector2(0f, -3.8f);
         launchBall.position = firstHitPoint;
         ignoreNextBallShoot = true;

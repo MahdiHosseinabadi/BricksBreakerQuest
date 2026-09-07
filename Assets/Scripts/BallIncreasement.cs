@@ -16,17 +16,16 @@ public class BallIncreasement : MonoBehaviour, IPoolable
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (!isFalling)
-        {
-            if (collider.gameObject.CompareTag("Ball"))
-            {
-                BallManager.instance.IncreaseBallNumber();
-                AudioManager.instance.Play(SoundType.BallCollect);
-                isFalling = true;
-            }
+        if (isFalling) return;
 
-            return;
+        if (collider.gameObject.CompareTag("Ball"))
+        {
+            BallManager.instance.IncreaseBallNumber();
+            AudioManager.instance.Play(SoundType.BallCollect);
+            isFalling = true;
         }
+
+        return;
     }
 
     void Update()
