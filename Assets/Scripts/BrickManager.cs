@@ -89,7 +89,7 @@ public class BrickManager : MonoBehaviour
 
                     if (brickScript != null)
                     {
-                        brickScript.maxHealth = CurrentRound;
+                        brickScript.maxHealth = CalculateBrickHealth();
                         brickScript.OnSpawn();
                     }
                 }
@@ -134,6 +134,26 @@ public class BrickManager : MonoBehaviour
 
         OnNextRoundStarted?.Invoke();
         AudioManager.instance.Play(SoundType.NextRound);
+    }
+
+    int CalculateBrickHealth()
+    {
+        if (CurrentRound <= 10)
+        {
+            return CurrentRound;
+        }
+        else if (CurrentRound <= 20)
+        {
+            return 10 + (CurrentRound - 10) * 2;
+        }
+        else if (CurrentRound <= 30)
+        {
+            return 30 + (CurrentRound - 20) * 3;
+        }
+        else
+        {
+            return 60 + (CurrentRound - 30) * 4;
+        }
     }
 
     public void ResetBricksManager()

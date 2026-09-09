@@ -30,12 +30,11 @@ public class BallIncreasement : MonoBehaviour, IPoolable
 
     void Update()
     {
-        if (!isFalling)
-        {
-            scale = 1f + scaleAmount * Mathf.PingPong(Time.unscaledTime * scaleSpeed, 1f);
-            transform.localScale = originalScale * scale;
-            return;
-        }
+        if (!isFalling) return;
+
+        // scale = 1f + scaleAmount * Mathf.PingPong(Time.unscaledTime * scaleSpeed, 1f);
+        // transform.localScale = originalScale * scale;
+
 
         transform.position += Vector3.down * fallSpeed * Time.unscaledDeltaTime;
 

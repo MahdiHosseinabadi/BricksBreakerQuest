@@ -988,7 +988,7 @@ MonoBehaviour:
   BricksParent: {fileID: 1488147449}
   referencePoint: {fileID: 835288859}
   BrickCount: 8
-  PossibilityOfNoEmptySpaceCreate: 5
+  PossibilityOfNoEmptySpaceCreate: 4
   PossibilityOfBoosterCreate: 3
 --- !u!4 &219875065
 Transform:
@@ -1039,7 +1039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.029632539, y: 0.92219037}
   m_AnchorMax: {x: 0.43229502, y: 0.9864381}
-  m_AnchoredPosition: {x: -21.999847, y: -4}
+  m_AnchoredPosition: {x: -21.999786, y: -4}
   m_SizeDelta: {x: 22, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &253090848
@@ -3714,8 +3714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ae7d9989e89e44f982aade016a53b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundFitCamera
-  spriteRenderer: {fileID: 0}
-  cam: {fileID: 0}
 --- !u!1 &914260940
 GameObject:
   m_ObjectHideFlags: 0
