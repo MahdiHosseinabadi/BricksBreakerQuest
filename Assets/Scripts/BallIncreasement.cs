@@ -6,9 +6,9 @@ public class BallIncreasement : MonoBehaviour, IPoolable
     [SerializeField] private float fallSpeed = 5f;
     [SerializeField] private float shrinkSpeed = 1f;
 
-
     [SerializeField] private float scaleAmount = 0.2f;
     [SerializeField] private float scaleSpeed = 2f;
+
     private float scale;
 
     bool isFalling = false;
@@ -30,11 +30,12 @@ public class BallIncreasement : MonoBehaviour, IPoolable
 
     void Update()
     {
-        if (!isFalling) return;
-
-        // scale = 1f + scaleAmount * Mathf.PingPong(Time.unscaledTime * scaleSpeed, 1f);
-        // transform.localScale = originalScale * scale;
-
+        if (!isFalling)
+        {
+            scale = 1f + scaleAmount * Mathf.PingPong(Time.unscaledTime * scaleSpeed, 1f);
+            transform.localScale = originalScale * scale;
+            return;
+        }
 
         transform.position += Vector3.down * fallSpeed * Time.unscaledDeltaTime;
 
