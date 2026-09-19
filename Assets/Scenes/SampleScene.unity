@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 201137498}
   - component: {fileID: 201137497}
   m_Layer: 0
-  m_Name: SFXAudioManager
+  m_Name: SFX Audio Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4631,7 +4631,7 @@ GameObject:
   - component: {fileID: 1158925320}
   - component: {fileID: 1158925319}
   m_Layer: 0
-  m_Name: MusicAudioManager
+  m_Name: Music Audio Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
