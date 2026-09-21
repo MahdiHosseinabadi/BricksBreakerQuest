@@ -1,7 +1,7 @@
 # 🧱 Bricks Breaker Quest
 
 <p align="center">
-  <img src="Images/gameplay.gif" width="120" alt="Bricks Breaker Quest Icon">
+  <img src="Images/Icon game.png" width="200" alt="Bricks Breaker Quest Icon">
 </p>
 
 <h1 align="center">🧱 Bricks Breaker Quest</h1>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="Images/gameplay.gif" width="400" alt="Bricks Breaker Quest Gameplay">
+  <img src="Images/gameplay.gif" width="350" alt="Bricks Breaker Quest Gameplay">
 </p>
 
 <p align="center">
