@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="Images/gameplay.gif" width="350" height="400" alt="Bricks Breaker Quest Gameplay">
+  <img src="Images/gameplay.gif" width="400" alt="Bricks Breaker Quest Gameplay">
 </p>
 
 <p align="center">
