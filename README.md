@@ -54,9 +54,9 @@ The game is designed around simple touch controls, multiple balls, brick destruc
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="Images/screenshot-1.png" width="300" alt="Bricks Breaker Quest Main Menu">
-  <img src="Images/screenshot-2.png" width="300" alt="Bricks Breaker Quest Gameplay">
-  <img src="Images/screenshot-3.png" width="300" alt="Bricks Breaker Quest Round">
+  <img src="Images/screenshot-1.png" width="270" alt="Bricks Breaker Quest Main Menu">
+  <img src="Images/screenshot-2.png" width="270" alt="Bricks Breaker Quest Gameplay">
+  <img src="Images/screenshot-3.png" width="270" alt="Bricks Breaker Quest Round">
 </p>
 
 ---
